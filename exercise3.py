@@ -1,5 +1,8 @@
 # Write your reverse_lookup function here
-# def ...
+def reverse_lookup(dict, value):
+    for k, v in dict.items():
+        if v == value:
+            return k
 
 phonebook = {
     'Joe': '702-555-6495',
