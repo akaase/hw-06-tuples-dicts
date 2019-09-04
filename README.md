@@ -1,6 +1,6 @@
 # Assignment: Python Data Structures - Tuples, Sets, and Dictionaries
 
-In this homework, you're going to write code for two challenge problems.
+In this homework, you're going to write code for some challenge problems.
 
 You'll practice these programming concepts we've covered in class:
 
@@ -104,7 +104,7 @@ April Ludgate in Administration can be reached at 555-3345.
 
 # Part 3: Reverse Lookup
 
-_Part 3 is **optional**. You are **not expected** to complete this part, but you could probably use the practice, so please do it!_
+*Part 3 is medium in difficulty. You'll have to do some research to figure out how to accomplish this.*
 
 Create a file called `part3.py` and write your solution code in there.
 
@@ -112,9 +112,12 @@ Finding the value from a key is easy: `my_dictionary[key]`. But, what if you onl
 
 You task is to write a function, `reverse_lookup()`, that takes a dictionary and a value and returns the corresponding key.
 
-For example:
+### Starter Code
 
 ```python
+# Write your reverse_lookup function here
+# def ...
+
 state_capitals = {
     'Alaska' : 'Juneau',
     'Colorado' : 'Denver',
@@ -122,9 +125,20 @@ state_capitals = {
     'Texas' : 'Austin'
 }
 
-print(reverse_lookup('Denver'))
-#--> Colorado
+print(reverse_lookup(state_capitals, 'Denver'))
+print(reverse_lookup(state_capitals, 'Salem'))
+print(reverse_lookup(state_capitals, 'Sacramento'))
 ```
+
+### Expected Output
+
+```
+Colorado
+Oregon
+None
+```
+
+**Hint:** Look up how to use `items()` with a dictionary, in order to iterate over both keys and values at the same time.
 
 ---
 
