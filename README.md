@@ -102,6 +102,8 @@ April Ludgate in Administration can be reached at 555-3345.
 
 **Hint:** Dictionaries have values that can be accessed with keys, for example, `employees['name']`. Keys are typically strings but can be numbers also.
 
+---
+
 # Part 3: Reverse Lookup
 
 *Part 3 is medium in difficulty. You'll have to do some research to figure out how to accomplish this.*
