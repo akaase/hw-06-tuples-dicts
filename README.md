@@ -1,11 +1,12 @@
-# Assignment: Python Data Structures - Tuples, Sets, and Dictionaries
+# Assignment: Python Data Structures - Tuples and Dictionaries
 
 In this homework, you're going to write code for some challenge problems.
 
 You'll practice these programming concepts we've covered in class:
 
-* Using dictionaries to solve problems.
-* Storing data in tuples and sets.
+* Storing and accessing data in tuples
+* Storing and accessing data in dictionaries
+* Storing and accessing data in combinations of containers
 
 ## Deliverables
 
@@ -18,7 +19,7 @@ You'll practice these programming concepts we've covered in class:
 
 To submit this assignment:
 
-1. Go to the [assignment's main repo](https://git.generalassemb.ly/PYTHR-august-2019/hw-08-tuples-and-dictionaries)
+1. Go to the **assignment's main repo** (not your fork)
 1. Click the **Issues** tab
 1. Click the **New Issue** button
 1. In the Title field, fill in your name
@@ -27,9 +28,9 @@ To submit this assignment:
 
 ---
 
-# Part 1: I Love You, Tuple
+# Exercise 1: I Love You, Tuple
 
-Create a file called `part1.py` and write your solution code in there.
+Create a file called `exercise1.py` and write your solution code in there.
 
 You may recall tuples from your in-class lesson. Tuples are *immutable* data structures, which means they can't be changed after they're created.
 
@@ -59,7 +60,7 @@ Groundhog Day ( 1993 ): He's having the day of his life...over and over again.
 Amélie ( 2001 ): One person can change your life forever.
 ```
 
-**Hint:** Remember, you can access a tuple sort of like a list, with the square brackets `[]` counting from zero (e.g., the value of `romantic_movie1[0]` is `"The Princess Bride"`).
+**Hint:** Remember, you can access a tuple sort of like a list, with the square brackets `[]` counting from zero (e.g., the value of `romantic_movie1[0]` is `'The Princess Bride'`).
 
 ### Bonus:
 
@@ -67,9 +68,9 @@ Look up how to change the `print` statement's separator character to an empty st
 
 ---
 
-# Part 2: Friends, Colleagues, and Details
+# Exercise 2: Friends, Colleagues, and Details
 
-Create a file called `part2.py` and write your solution code in there.
+Create a file called `exercise2.py` and write your solution code in there.
 
 Your boss tasks you with creating a company directory.
 
@@ -100,15 +101,15 @@ Andy Dwyer in Shoe Shining can be reached at 555-1122.
 April Ludgate in Administration can be reached at 555-3345.
 ```
 
-**Hint:** Dictionaries have values that can be accessed with keys, for example, `employees['name']`. Keys are typically strings but can be numbers also.
+**Hint:** Remember that dictionaries have values that can be accessed with keys, for example, `employees['name']`. Keys are typically strings but can be numbers also.
 
 ---
 
-# Part 3: Reverse Lookup
+# Exercise 3: Reverse Lookup
 
-*Part 3 is medium in difficulty. You'll have to do some research to figure out how to accomplish this.*
+*Part 3 is medium in difficulty. You'll have to read and understand some Python documentation to figure out how to accomplish this.*
 
-Create a file called `part3.py` and write your solution code in there.
+Create a file called `exercise3.py` and write your solution code in there.
 
 Finding the value from a key is easy: `my_dictionary[key]`. But, what if you only have the value and want to find the key?
 
@@ -127,9 +128,9 @@ state_capitals = {
     'Texas' : 'Austin'
 }
 
-print(reverse_lookup(state_capitals, 'Denver'))
-print(reverse_lookup(state_capitals, 'Salem'))
-print(reverse_lookup(state_capitals, 'Sacramento'))
+print(reverse_lookup(state_capitals, 'Denver'))     #--> Colorado
+print(reverse_lookup(state_capitals, 'Salem'))      #--> Oregon
+print(reverse_lookup(state_capitals, 'Sacramento')) #--> None
 ```
 
 ### Expected Output
@@ -140,7 +141,7 @@ Oregon
 None
 ```
 
-**Hint:** Look up how to use `items()` with a dictionary, in order to iterate over both keys and values at the same time.
+**Hint:** Look up how to use `items()` with a dictionary, in order to iterate over both keys and values at the same time. The [official Python documentation](https://docs.python.org/3/tutorial/datastructures.html#looping-techniques) should be quite helpful.
 
 ---
 
