@@ -1,8 +1,8 @@
 # Assignment: Python Data Structures - Tuples and Dictionaries
 
-In this homework, you're going to write code for some challenge problems.
+**Due:** XXX
 
-You'll practice these programming concepts we've covered in class:
+In this homework, you'll practice these concepts we've covered in class:
 
 * Storing and accessing data in tuples
 * Storing and accessing data in dictionaries
@@ -107,37 +107,41 @@ April Ludgate in Administration can be reached at 555-3345.
 
 # Exercise 3: Reverse Lookup
 
-*Part 3 is medium in difficulty. You'll have to read and understand some Python documentation to figure out how to accomplish this.*
+Write your solution code in `exercise3.py`.
 
-Create a file called `exercise3.py` and write your solution code in there.
+Finding the value from a key is easy: `my_dictionary[key]`. For example, if you have a `phonebook` dictionary, you can look up Jill's phone number with `phonebook['Jill']`.
 
-Finding the value from a key is easy: `my_dictionary[key]`. But, what if you only have the value and want to find the key?
+But, what if you only have the value and want to find the key? In our `phonebook` case, if you know someone's phone number, how do you look up their name? We call that a "Reverse Lookup"!
 
 You task is to write a function, `reverse_lookup()`, that takes a dictionary and a value and returns the corresponding key.
 
 ### Starter Code
 
+The following starter code is already in `exercise3.py`:
+
 ```python
 # Write your reverse_lookup function here
 # def ...
 
-state_capitals = {
-    'Alaska' : 'Juneau',
-    'Colorado' : 'Denver',
-    'Oregon' : 'Salem',
-    'Texas' : 'Austin'
+phonebook = {
+    'Joe': '702-555-6495',
+    'Silvio': '504-555-3234',
+    'Greta': '213-555-4364',
+    'Jill': '415-555-5864'
 }
 
-print(reverse_lookup(state_capitals, 'Denver'))     #--> Colorado
-print(reverse_lookup(state_capitals, 'Salem'))      #--> Oregon
-print(reverse_lookup(state_capitals, 'Sacramento')) #--> None
+print(reverse_lookup(phonebook, '504-555-3234'))  #--> Silvio's number
+print(reverse_lookup(phonebook, '213-555-4364'))  #--> Greta's number
+print(reverse_lookup(phonebook, '111-222-3333'))  #--> Nobody's number
 ```
 
 ### Expected Output
 
+When you run your completed `exercise3.py` file, you should get the following output:
+
 ```
-Colorado
-Oregon
+Silvio
+Greta
 None
 ```
 
