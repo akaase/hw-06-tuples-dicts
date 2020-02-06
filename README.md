@@ -1,7 +1,5 @@
 # Assignment: Python Data Structures - Tuples and Dictionaries
 
-**Due:** XXX
-
 In this homework, you'll practice these concepts we've covered in class:
 
 * Storing and accessing data in tuples
